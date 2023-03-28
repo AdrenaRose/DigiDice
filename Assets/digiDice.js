@@ -12,7 +12,7 @@
 // console.log(y);
 // console.log(z);
 
-document.getElementById("rollX").onclick = function () {
+document.getElementById("rollA").onclick = function () {
   let a = Math.floor(Math.random() * 4) + 1;
   document.getElementById("aLabel").innerHTML = x;
 };
