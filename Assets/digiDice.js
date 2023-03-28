@@ -13,6 +13,11 @@
 // console.log(z);
 
 document.getElementById("rollX").onclick = function () {
+  let a = Math.floor(Math.random() * 4) + 1;
+  document.getElementById("aLabel").innerHTML = x;
+};
+
+document.getElementById("rollX").onclick = function () {
   let x = Math.floor(Math.random() * 6) + 1;
   document.getElementById("xLabel").innerHTML = x;
 };
@@ -28,10 +33,12 @@ document.getElementById("rollZ").onclick = function () {
 };
 
 document.getElementById("rollAll").onclick = function () {
+  let a = Math.floor(Math.random() * 4) + 1; //random whole number, rounded down, between 0 and 4
   let x = Math.floor(Math.random() * 6) + 1; //random whole number, rounded down, between 0 and 6
   let y = Math.floor(Math.random() * 8) + 1; //random whole number, rounded down, between 0 and 8
   let z = Math.floor(Math.random() * 10) + 1; //random whole number, rounded down, between 0 and 10
 
+  document.getElementById("aLabel").innerHTML = a;
   document.getElementById("xLabel").innerHTML = x;
   document.getElementById("yLabel").innerHTML = y;
   document.getElementById("zLabel").innerHTML = z;
